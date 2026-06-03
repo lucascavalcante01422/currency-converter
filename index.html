@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="img-background">
+        <img src="./assets/img/img-conversor-fundo.png" alt="img-fundo">
+    </div>
+
+    <div class="center-img">
+        <img src="./assets/img/center-img.png" alt="img-globe">
+    </div>
+    <main>
+        <div class="container-form">
+            <form>
+                <div class="convert-from">
+                    <label for="select-convert-from">Converter <strong>de</strong></label>
+                    <select name="convert-from" id="select-convert-from" class="form-item">
+                        <option value="real-start"> R$ Real Brasileiro </option>
+                        <option value="dolar-start"> US$ Dólar Americano </option>
+                        <option value="euro-start"> € Euro </option>
+                    </select>
+
+                    <label for="select-convert-to">Converter <strong>para</strong></label>
+                    <select name="convert-to" id="select-convert-to" class="form-item">
+                        <option value="dolar"> US$ Dólar Americano </option>
+                        <option value="euro"> € Euro </option>
+                        <option value="real"> R$ Real Brasileiro </option>
+                    </select>
+
+                    <label for="value-to-convert"><strong>Valor</strong></label>
+                    <input placeholder="10000" type="number" name="value-to-convert" id="value-to-convert"
+                        class="form-item">
+
+                    <button type="button" class="button-to-convert">Converter</button>
+                </div>
+
+                <section class="container-result">
+                    <div class="start-coin">
+                        <img class="brasil" src="./assets/img/Brasil-img.png" alt="brasil-real-img">
+                        <p id="p-coin-start" class="type-coin">Real</p>
+                        <p id="p-start-value" class="coin-value">R$ 0,00</p>
+                    </div>
+
+                    <div class="arrow">
+                        <img class="arrow-img" src="./assets/img/arrow-img.png" alt="arrow">
+                    </div>
+
+                    <div class="final-coin">
+                        <img class="usa" src="./assets/img/USA-img.png" alt="USA-dolar-img">
+                        <p id="p-coin-final" class="type-coin">Dólar</p>
+                        <p id="p-final-value" class="coin-value">US$ 0,00</p>
+                    </div>
+                </section>
+            </form>
+        </div>
+    </main>
+</body>
+
+<script src="./script.js"></script>
+
+</html>
